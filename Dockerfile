@@ -1,3 +1,4 @@
+@@ -1,16 +0,0 @@
 FROM alpine:latest as builder
 WORKDIR /bun
 RUN apk --no-cache add curl bash libstdc++ ca-certificates && \
@@ -14,3 +15,4 @@ USER appuser
 COPY . ./
 
 CMD ["bun", "run", "server.ts"]
+No newline at end of file
