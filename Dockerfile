@@ -1,5 +1,5 @@
-@@ -1,16 +0,0 @@
 FROM alpine:latest as builder
+
 WORKDIR /bun
 RUN apk --no-cache add curl bash libstdc++ ca-certificates && \
     curl -fsSL -o "/bun/bun.zip" "https://github.com/oven-sh/bun/releases/download/bun-v0.1.3/bun-linux-x64.zip" && \
@@ -14,5 +14,4 @@ RUN addgroup --gid 101 --system appuser && adduser --uid 101 --system appuser &&
 USER appuser
 COPY . ./
 
-CMD ["bun", "run", "server.ts"]
-No newline at end of file
+CMD ["bun", "run", "index.ts"]
