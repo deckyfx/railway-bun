@@ -1,0 +1,24 @@
+{
+  "dependencies": {},
+  "name": "railway-bun",
+  "description": "railway-app and bun",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deckyfx/railway-bun.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deckyfx/railway-bun/issues"
+  },
+  "homepage": "https://github.com/deckyfx/railway-bun#readme",
+  "bun-create": {
+    "preinstall": [],
+    "postinstall": []
+  }
+}
