@@ -1,4 +1,4 @@
-FROM alpine:latest as builder
+FROM frolvlad/alpine-glibc:glibc-2.30
 
 WORKDIR /bun
 RUN apk --no-cache add curl bash libstdc++ ca-certificates && \
